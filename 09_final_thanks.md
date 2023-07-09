@@ -4,7 +4,7 @@ Thanks for using this fangame engine and reading this documentation. I hope you 
 
 You can find me on Discord as **ReloadedK**, or **ReloadedK#2186**.
 
-You can also write me an email to **kevin_matias@protonmail.com** or **kevinmatiassuarez789@gmail.com**.
+You can also write me an email to **kevin_matias@protonmail.com**.
 
 ---
 
