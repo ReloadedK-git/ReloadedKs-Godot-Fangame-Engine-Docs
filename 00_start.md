@@ -1,4 +1,4 @@
-# ReloadedK's Godot Fangame Engine (v1.0)
+# ReloadedK's Godot Fangame Engine (v1.1)
 
 A Godot 4.x fangame engine, created by ReloadedK.
 
