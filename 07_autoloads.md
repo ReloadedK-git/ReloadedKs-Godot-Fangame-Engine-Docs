@@ -45,6 +45,8 @@ As you can see, there are a few. I prefer having multiple autoloads with specifi
 
 * ***GLOBAL_PARTICLES:*** Loaded from ***scrGlobalParticles.gd***. This autoload script is used to preload each particle material at startup, so they don't need to get compiled as soon as a new particle is emitted, causing stuttering. Doing this will increase the load time at startup, but it's a better trade-off when it comes to gameplay, which is prioritized.
 
+    WARNING: If using the *Compatibility* renderer on versions 4.0.0, 4.0.1 and 4.0.2 particles will not work. They will if using the  *Mobile* or *Forward+* renderers. The issue was fixed on Godot v4.1.
+
 * ***GLOBAL_MUSIC:*** Loaded from ***scrGlobalMusicPlayer.gd***. This autoload script is used as the game's global music player. Since it's an autoload, the music will not stop when changing rooms or levels, unless the song's ID changes. This script does the actual music playing, music changing and looping, and its values are set from ***objMusicPlayer***.
 
 * ***GLOBAL_SOUNDS:*** Loaded from ***objSoundManager.tscn***. This is an autoloaded scene with both a script and several nodes. It preloads every sound effect in the game so they only need to be loaded once and referenced later, and uses a function to assign a new sound inside an array of AudioStreamPlayer nodes, allowing many sounds to be played at the same time, without interruption.
