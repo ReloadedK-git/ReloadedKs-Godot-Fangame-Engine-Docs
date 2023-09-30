@@ -66,8 +66,6 @@ Coins can get picked by the player and, if there's no more coins, will queue_fre
 
 The classic invisible block. Turns visible as soon as the player touches it.
 
-Due to how Godot handles collisions, using Area2D nodes is not possible. What is used instead is a trick known as "duck typing", which is checking what the player is currently colliding with, getting the collision information, and calling a method if it exists. It's not optimal, but it's a lot cleaner and there are ways to mitigate the amount of processing it requires, like only checking for collisions while invisible and inside of the screen.
-
 ### objJumpRefresher
 
 Re-enables double jumping for the player if it detects a collision with it and is currently active. Will also emit some particles when this happens, disabling itself until a timer runs out and re-enables it.
